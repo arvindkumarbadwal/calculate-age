@@ -1,0 +1,25 @@
+{
+  "name": "calculate-age",
+  "version": "0.1.0",
+  "description": "Calculate age of given date of birth and some other useful function",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src -d dist"
+  },
+  "author": "Arvindkumar Badwal <arvindkumar.b@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dayjs": "^1.10.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "jest": "^26.6.3"
+  },
+  "bugs": {
+    "url": "https://github.com/arvindkumarbadwal/calculate-age/issues"
+  },
+  "homepage": "https://github.com/arvindkumarbadwal/calculate-age"
+}
