@@ -8,8 +8,11 @@ coverage
 
 #src
 src
+examples
 babel.config.json
 package-lock.json
+jest.config.js
+tsconfig.json
 
 #build tools
 .travis.yml
@@ -24,3 +27,4 @@ package-lock.json
 #editor settings
 .idea
 .editorconfig
+.gitignore

@@ -12,14 +12,21 @@ npm install calculate-age
 ```
 
 ## Using 
+
+Function Parameter
+```js
+    calculateAge(dateOfBirth: string | Date, compareDate?: string | Date)
+```
+
+Example
 ```js
 import calculateAge from 'calculate-age'
-// or const calculateAge = require('calculate-age').default
+// OR const calculateAge = require('calculate-age').default
 
-const output = new calculateAge('1988-10-26', '2021-01-26').getObject()
+const output = calculateAge('1988-10-26', '2021-01-26').getObject()
 // output: { years: 32, months: 3, days: 10 }
 
-const output = new calculateAge('1988-10-26', '2021-01-26').getString()
+const output = calculateAge('1988-10-26', '2021-01-26').getString()
 // output: 32 years 3 months
 ```
 
@@ -38,6 +45,14 @@ getObject() --> getString()
 // { years: 0, months: 1, days: 0 } --> 1 month
 // { years: 0, months: 0, days: 1 } --> 1 day
 ```
+## Release Notes - Version 1.0.0
+
+### Features
+
+- Added TypeScript support to the package.
+- Changed from class-based to function-based implementation for `calculateAge` method, removing the need for `new` keyword.
+- Made `compareDate` optional in `calculateAge` method, defaulting it to today's date.
+
 
 ## Contributing
 
